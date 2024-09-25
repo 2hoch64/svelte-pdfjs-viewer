@@ -23,17 +23,25 @@ A powerful Svelte component for viewing and interacting with PDF documents using
 2. Ensure you have PDF.js installed in your project:
 ``npm install pdfjs-dist``
 
-3. Copy the PDF.js viewer files to your project's `static` directory. (Detailed instructions in the Setup section below)
+3. Download the PDF.js Viewer prebuilt package:
+   - Get the [PDF.js Viewer 4.0.379 Prebuilt](https://github.com/mozilla/pdf.js/releases/download/v4.0.379/pdfjs-4.0.379-dist.zip)
+   - Extract the contents of the zip file
 
 ## Setup
+1. After downloading and extracting the PDF.js viewer files:
+   - Copy the entire `build` folder from the extracted package
+   - Paste it into your project's `static` directory and rename it to `pdfjs-dist`
 
-1. After installation, copy the PDF.js viewer files to your project:
-- From `node_modules/pdfjs-dist/build`, copy:
-  - `pdf.worker.js`
-  - The `web` folder
-- Place these in your project's `static` directory
+2. Ensure your static folder structure looks like this:
+```
+   ├── static/
+   │   └── pdfjs-dist/
+   │       ├── build/
+   │       └── web/
 
-2. In your `svelte.config.js`, ensure static file serving is enabled:
+```   
+
+4. In your `svelte.config.js`, ensure static file serving is enabled:
 ```javascript
 import adapter from '@sveltejs/adapter-auto';
 
