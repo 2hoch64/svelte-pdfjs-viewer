@@ -1,6 +1,6 @@
 # Advanced PDF Viewer Svelte Component
 
-A powerful Svelte component for viewing and interacting with PDF documents using PDF.js. This component offers a full-featured PDF viewing experience, including advanced capabilities like form filling and annotations.
+A proof of concept Svelte component for viewing and interacting with PDF documents using PDF.js. This component demonstrates a full-featured PDF viewing experience, including advanced capabilities like form filling and annotations. It serves as an inspiration for others looking to implement similar functionality.
 
 ## Features
 
@@ -15,30 +15,21 @@ A powerful Svelte component for viewing and interacting with PDF documents using
 - Print functionality
 - Responsive design for various screen sizes
 
-## Installation
-
-1. Install the package:
-``npm install svelte-pdfjs-viewer``
-
-2. Ensure you have PDF.js installed in your project:
-``npm install pdfjs-dist``
-
-3. Download the PDF.js Viewer prebuilt package:
+## Setup
+1. Download the PDF.js Viewer prebuilt package:
    - Get the [PDF.js Viewer 4.0.379 Prebuilt](https://github.com/mozilla/pdf.js/releases/download/v4.0.379/pdfjs-4.0.379-dist.zip)
    - Extract the contents of the zip file
 
-## Setup
-1. After downloading and extracting the PDF.js viewer files:
+2. After downloading and extracting the PDF.js viewer files:
    - Copy the entire `build` folder from the extracted package
    - Paste it into your project's `static` directory and rename it to `pdfjs-dist`
 
-2. Ensure your static folder structure looks like this:
+3. Ensure your static folder structure looks like this:
 ```
    ├── static/
    │   └── pdfjs-dist/
    │       ├── build/
    │       └── web/
-
 ```   
 
 4. In your `svelte.config.js`, ensure static file serving is enabled:
