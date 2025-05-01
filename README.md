@@ -17,7 +17,7 @@ A proof of concept Svelte component for viewing and interacting with PDF documen
 
 ## Setup
 1. Download the PDF.js Viewer prebuilt package:
-   - Get the [PDF.js Viewer 4.0.379 Prebuilt](https://github.com/mozilla/pdf.js/releases/download/v4.0.379/pdfjs-4.0.379-dist.zip)
+   - Get the prebuilt PDF.js Viewer Distribution Package (`pdfjs-X.X.X-dist.zip`) from https://github.com/mozilla/pdf.js/releases
    - Extract the contents of the zip file
 
 2. After downloading and extracting the PDF.js viewer files:
